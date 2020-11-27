@@ -1,26 +1,21 @@
 .container{
   width:$size-100;
   display:grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto 250px auto;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, auto);
   grid-template-areas:"header header header"
-                    "main   main    main"
-                    "footer footer  footer ";
-  margin: 0 auto;
-  border-radius: 9px;
-  box-shadow: 0 2px 8px 2px $box-shadow;
-  
+                    "main  main     main"
+                    "footer footer footer";
 
-
-  header{
+  .header{
     @include grid-row-column(header);
   }
 
-  main{
+  .main{
     @include grid-row-column(main);
   }
 
-  footer{
+  .footer{
     @include grid-row-column(footer);
   }
 }

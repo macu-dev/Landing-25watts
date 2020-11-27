@@ -15,3 +15,26 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
 }
+
+.container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas: "header header header" "main  main     main" "footer footer footer";
+}
+
+.container .header {
+  grid-column: header/header;
+  grid-row: header/header;
+}
+
+.container .main {
+  grid-column: main/main;
+  grid-row: main/main;
+}
+
+.container .footer {
+  grid-column: footer/footer;
+  grid-row: footer/footer;
+}
