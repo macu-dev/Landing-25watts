@@ -10,34 +10,34 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="container-grid">
-    <header>
-      <a class="navbar-brand" href="index.html">
+  <div class="container">
+    <header class="header">
+      <a class="header__logo" href="index.html">
         <img src="images/25watts-logo.svg" alt="logo de 25Watts">
       </a>
-      <nav>
-        <ul class="navbar-nav">
-          <li class="nav-item">
+      <nav class="header__navigation">
+        <ul class="navigationList">
+          <li class="navigationList__item">
             <a href="#home">Home</a>
           </li>
-          <li class="nav-item">
+          <li class="navigationList__item">
             <a href="#about">About</a>
           </li>
-          <li class="nav-item">
+          <li class="navigationList__item">
             <a href="#products">Products</a>
           </li>
-          <li class="nav-item">
+          <li class="navigationList__item">
             <a href="#services">Services</a>
           </li>
-          <li class="nav-item">
+          <li class="navigationList__item">
             <a href="#contact">Contact</a>
           </li>
         </ul>
       </nav>
     </header>
-    <main>
+    <main class="main">
       <!-- section home -->
-      <section id="home">
+      <section id="home" class="main__section-primary">
         <div classs="slider">
           <div class="silder-group-items">
             <h1>Sed ut perspiciatis unde omnis iste natus</h1>
@@ -69,7 +69,7 @@
       </section>
   
       <!-- section about -->
-      <section id="about">
+      <section id="about" classs="main__section-secondary">
         <h2>We Help Businesses</h2>
         <p>Grow and Innovate</p>
         <p>
@@ -172,7 +172,7 @@
         </form>
       </section>
     </main>
-    <footer>
+    <footer class="footer">
       <img src="" alt="logo de 25 watts">
       <p>2020 &copy; All rights reserved.</p>
     </footer>

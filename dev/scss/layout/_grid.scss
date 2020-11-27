@@ -1,5 +1,5 @@
 .container{
-  width:$size-100 - 50%;
+  width:$size-100;
   display:grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto 250px auto;
