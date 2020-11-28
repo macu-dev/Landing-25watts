@@ -61,3 +61,13 @@
   flex-wrap:wrap;
   align-items: $align-items;
 }
+
+@mixin bg($img-url, $size, $position ){
+  background: {
+    image: $img-url;
+    size:$size;
+    position:$position;
+    repeat: no-repeat;
+  }
+
+}

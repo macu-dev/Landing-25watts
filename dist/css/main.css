@@ -41,8 +41,10 @@ body {
 
 .header {
   width: 100%;
-  background-color: #b6b6b6;
   border-bottom: 1px solid #E0752F;
+  position: absolute;
+  top: 0;
+  z-index: 100;
 }
 
 .header-container {
@@ -81,4 +83,29 @@ body {
 
 .navigationList__item:last-child {
   padding-right: 0;
+}
+
+.main {
+  width: 100%;
+}
+
+.main__section-primary {
+  height: 768px;
+}
+
+.slider {
+  width: 100%;
+  padding: 0 100px;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background-image: url("/dist/images/slider.png");
+  background-size: cover;
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.slider-group-items {
+  color: #FFFFFF;
 }

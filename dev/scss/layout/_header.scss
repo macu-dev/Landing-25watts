@@ -1,7 +1,9 @@
 .header {
   width: $size-100;
-  background-color: rgb(182, 182, 182);
   border-bottom: 1px solid $color-orange;
+  position: absolute;
+  top: 0;
+  z-index: 100;
 }
 
 .header-container{

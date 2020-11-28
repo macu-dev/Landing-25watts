@@ -1,19 +1,19 @@
-main{
-  display: inherit;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: auto;
-  grid-template-areas: "suscripcion whyUs";
+.main{
+  width: $size-100;
+}
 
-  .suscripcion{
-    background-color: $Cyan;
-    padding: 40px;
-    @include grid-row-column(suscripcion);
-  }
-  
-  .whyUs{
-    background-color: $Cyan-light;
-    padding: 40px;
-    @include grid-row-column(whyUs);
-  }
+.main__section-primary{
+  height: 768px;
+}
 
+.slider{
+  width: 100%;
+  padding: 0 100px;
+  height: 100%;
+  @include flexbox();
+  @include bg(url("/dist/images/slider.png"), cover, 100% 100%);
+}
+
+.slider-group-items{
+  color:$color-white;
 }
