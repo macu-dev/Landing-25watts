@@ -12,8 +12,58 @@
   height: 100%;
   @include flexbox();
   @include bg(url("/dist/images/slider.png"), cover, 100% 100%);
+  position: relative;
 }
 
-.slider-group-items{
-  color:$color-white;
+.slider-items{
+
+  height: 35%;
+
+  h1{
+    @include font($font-family-poppins, $font-size-48, $color-white);
+    letter-spacing: $character-spacing-0-67;
+    line-height: $line-spacing-48;
+    font-weight: $font-weight-semiBold;
+  }
+
+  h2{
+    @include font($font-family-roboto, $font-size-16, $color-white);
+    font-weight: $font-weight-medium;
+    line-height: $line-spacing-21;
+    margin-top: 30px;
+    margin-bottom: 53px;
+  }
+
+  a{
+    @include configLink();
+    @include btn($color-orange, none, 25px, 14px 32px);
+    @include font($font-family-roboto, $font-size-16, $color-white);
+    font-weight: $font-weight-medium;
+  }
+
+}
+
+.slider-menu{
+  position: absolute;
+  top: 584px;
+  left: 101px;
+}
+
+.slider-menu__item{
+  cursor: pointer;
+  width: 8px;
+  height: 8px;
+  margin-right: 13px;
+  background-color: $color-5f6368;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.slider-menu__item:last-child{
+  margin-right: 0;
+}
+
+.slider-menu__item-active{
+  background-color: $color-orange;
 }
