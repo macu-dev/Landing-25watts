@@ -1,83 +1,40 @@
-header{
+.header {
   width: $size-100;
-  height: $size-100;
-  display: flex;
-  flex-wrap:wrap;
-  align-content: center;
-  justify-content:start;
-  padding: 40px;
-  background-color: $color-white;
-  
-
-  h1 {
-    width: $size-100;
-    @include font($font-karla-bold, 1.5rem, $Cyan);
-    padding-bottom:24px;
-  }
-
-  h2{
-    color:$Bright-Yellow;
-    width: $size-100;
-    font-size: 17px;
-    padding-bottom: 11px;
-  }
-
-  p{
-    color:$Grayish-Blue;
-    line-height: 1.6;
-  }
-
+  background-color: rgb(182, 182, 182);
+  border-bottom: 1px solid $color-orange;
 }
 
-.box_title{
-  width:$size-100;
-  display:flex;
-  flex-wrap:wrap;
-  justify-content:center;
-  .title_ping, .subtile_ping{
-    width: $size-100;
-    text-align:center;
-  }
-  .title_ping{
-    @include font ($font-libre-franklin, $size-2rem + 1rem, $color-gray );
-    font-weight:300;
-
-    span {
-      color:$color-black;
-      font-weight: $font-weight-bold;
-    }
-  }
-
-  .subtile_ping{
-    @include font ($font-libre-franklin, 1.3rem, $color-black );
-    font-weight: 100;
-  }
-
+.header-container{
+  width: $size-100;
+  padding: 33px 100px;
+  @include flexbox();
+  flex-wrap: nowrap;
 }
 
-  .box_img{
-    width: $size-100;
-    margin-top: $size-2rem + 1rem;
-    // height: 100%;
-    display: flex;
-    justify-content:center;
-    align-items:center;
-  
-    img{
-      width: $size-50;
-      height:$size-100;
-      max-width: $size-100;
-      object-fit: contain;
-    }
-  }
+.header__navigation{
+  @include flexbox();
+  width: $size-100 - 10%;
+  justify-content:flex-end;
+}
 
-  .container-icons + p{
-    margin-top: 2rem;
-    width:$size-100;
-    color: $color-gray;
-    font-size: 0.9rem;
-    text-align:center;
-  }
+.navigationList{
+  list-style: none;
+  @include flexbox();
+}
+
+.navigationList__item{
+  padding-right: 57px;
+}
+
+.navigationList__item a{
+  @include configLink();
+  color: $color-white;
+  font-weight: $font-weight-medium;
+}
+
+.navigationList__item:last-child{
+  padding-right: 0;
+}
 
   
 

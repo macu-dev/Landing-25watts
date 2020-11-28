@@ -56,3 +56,8 @@
   border: $border-size solid $border-color;
 }
 
+@mixin flexbox($align-items:center) {
+  display: flex;
+  flex-wrap:wrap;
+  align-items: $align-items;
+}

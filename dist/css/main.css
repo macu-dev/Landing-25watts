@@ -38,3 +38,47 @@ body {
   grid-column: footer/footer;
   grid-row: footer/footer;
 }
+
+.header {
+  width: 100%;
+  background-color: #b6b6b6;
+  border-bottom: 1px solid #E0752F;
+}
+
+.header-container {
+  width: 100%;
+  padding: 33px 100px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.header__navigation {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 90%;
+  justify-content: flex-end;
+}
+
+.navigationList {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.navigationList__item {
+  padding-right: 57px;
+}
+
+.navigationList__item a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-weight: 500;
+}
+
+.navigationList__item:last-child {
+  padding-right: 0;
+}
