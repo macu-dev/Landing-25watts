@@ -1,55 +1,67 @@
-.main{
+.main {
   width: $size-100;
 }
 
-.main__section-primary{
+
+/* primera section */
+
+.main__section-primary {
   height: 768px;
 }
 
-.slider{
+.slider {
   width: 100%;
   padding: 0 100px;
   height: 100%;
   @include flexbox();
-  @include bg(url("/dist/images/slider.png"), cover, 100% 100%);
+  @include bg(url("/dist/images/slider.png"),
+    cover,
+    100% 100%);
   position: relative;
 }
 
-.slider-items{
-
+.slider-items {
   height: 35%;
 
-  h1{
-    @include font($font-family-poppins, $font-size-48, $color-white);
+  h1 {
+    @include font($font-family-poppins,
+      $font-size-48,
+      $color-white);
     letter-spacing: $character-spacing-0-67;
     line-height: $line-spacing-48;
     font-weight: $font-weight-semiBold;
   }
 
-  h2{
-    @include font($font-family-roboto, $font-size-16, $color-white);
+  h2 {
+    @include font($font-family-roboto,
+      $font-size-16,
+      $color-white);
     font-weight: $font-weight-medium;
     line-height: $line-spacing-21;
     margin-top: 30px;
     margin-bottom: 53px;
   }
 
-  a{
+  a {
     @include configLink();
-    @include btn($color-orange, none, 25px, 14px 32px);
-    @include font($font-family-roboto, $font-size-16, $color-white);
+    @include btn($color-orange,
+      none,
+      25px,
+      14px 32px);
+    @include font($font-family-roboto,
+      $font-size-16,
+      $color-white);
     font-weight: $font-weight-medium;
   }
-
 }
 
-.slider-menu{
+.slider-menu {
   position: absolute;
   top: 584px;
   left: 101px;
 }
 
-.slider-menu__item{
+.slider-menu__item {
   cursor: pointer;
   width: 8px;
   height: 8px;
@@ -60,10 +72,61 @@
   transition: background-color 0.6s ease;
 }
 
-.slider-menu__item:last-child{
+.slider-menu__item:last-child {
   margin-right: 0;
 }
 
-.slider-menu__item-active{
+.slider-menu__item-active {
   background-color: $color-orange;
+}
+
+
+/* segunda section */
+.main__section-secondary {
+  width: 100%;
+  height: 672px;
+  @include flexbox();
+
+  .container {
+    width: 100%;
+    padding: 0 299px;
+    position: relative;
+    height: $size-100;
+    @include flexbox();
+    align-content:center;
+
+  }
+
+  .container:after{
+    content: "";
+    display: block;
+    background-color:$color-orange;
+    width: 32px;
+    top:150px;
+    left: 0;
+    height: 384px;
+    position: absolute;
+  }
+}
+
+.container h2 {
+  width: $size-100;
+  line-height: $line-spacing-45;
+  @include font($font-family-poppins,$font-size-39, $color-text);
+  font-weight: $font-weight-semiBold;
+  letter-spacing: $character-spacing-0-55;
+}
+
+.container p:nth-child(2){
+  margin-bottom:44px;
+  @include font($font-family-poppins,$font-size-39,$color-orange);
+  line-height: $line-spacing-45;
+  font-weight: $font-weight-semiBold;
+  letter-spacing: $character-spacing-0-55;
+}
+
+.container p:nth-child(3){
+  line-height: $line-spacing-28;
+  color:$color-text;
+  letter-spacing: $character-spacing-0-22;
 }

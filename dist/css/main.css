@@ -16,7 +16,7 @@ body {
   font-size: 16px;
 }
 
-.container {
+.container-grid {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -24,17 +24,17 @@ body {
   grid-template-areas: "header header header" "main  main     main" "footer footer footer";
 }
 
-.container .header {
+.container-grid .header {
   grid-column: header/header;
   grid-row: header/header;
 }
 
-.container .main {
+.container-grid .main {
   grid-column: main/main;
   grid-row: main/main;
 }
 
-.container .footer {
+.container-grid .footer {
   grid-column: footer/footer;
   grid-row: footer/footer;
 }
@@ -89,6 +89,7 @@ body {
   width: 100%;
 }
 
+/* primera section */
 .main__section-primary {
   height: 768px;
 }
@@ -166,4 +167,61 @@ body {
 
 .slider-menu__item-active {
   background-color: #E0752F;
+}
+
+/* segunda section */
+.main__section-secondary {
+  width: 100%;
+  height: 672px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.main__section-secondary .container {
+  width: 100%;
+  padding: 0 299px;
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+}
+
+.main__section-secondary .container:after {
+  content: "";
+  display: block;
+  background-color: #E0752F;
+  width: 32px;
+  top: 150px;
+  left: 0;
+  height: 384px;
+  position: absolute;
+}
+
+.container h2 {
+  width: 100%;
+  line-height: 45px;
+  font-family: "Poppins";
+  font-size: 39px;
+  color: #343434;
+  font-weight: 600;
+  letter-spacing: 0.55px;
+}
+
+.container p:nth-child(2) {
+  margin-bottom: 44px;
+  font-family: "Poppins";
+  font-size: 39px;
+  color: #E0752F;
+  line-height: 45px;
+  font-weight: 600;
+  letter-spacing: 0.55px;
+}
+
+.container p:nth-child(3) {
+  line-height: 28px;
+  color: #343434;
+  letter-spacing: 0.22px;
 }
