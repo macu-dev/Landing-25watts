@@ -176,20 +176,15 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-}
-
-.main__section-secondary .container {
-  width: 100%;
   padding: 0 299px;
   position: relative;
-  height: 100%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   align-content: center;
 }
 
-.main__section-secondary .container:after {
+.main__section-secondary:after {
   content: "";
   display: block;
   background-color: #E0752F;
@@ -200,7 +195,7 @@ body {
   position: absolute;
 }
 
-.container h2 {
+.main__section-section__title {
   width: 100%;
   line-height: 45px;
   font-family: "Poppins";
@@ -210,7 +205,7 @@ body {
   letter-spacing: 0.55px;
 }
 
-.container p:nth-child(2) {
+.main__section-section__subtitle {
   margin-bottom: 44px;
   font-family: "Poppins";
   font-size: 39px;
@@ -220,7 +215,7 @@ body {
   letter-spacing: 0.55px;
 }
 
-.container p:nth-child(3) {
+.main__section-section__parraf {
   line-height: 28px;
   color: #343434;
   letter-spacing: 0.22px;
