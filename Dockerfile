@@ -10,8 +10,13 @@ COPY supervisor.conf /etc/supervisor/conf.d/supervisor.conf
 #ADD Docker/default /etc/nginx/sites-enabled/
 ADD . /app
 
+
+WORKDIR /app
 RUN echo "Setup Configs..." \
-  && (cd /app && npm install && npm list && npm install -g gulp && npm link gulp && npm list && splet 20s && gulp build)
+  pwd;  ls; \
+  npm install; npm list; \
+  npm install -g gulp; npm link gulp; npm list; \
+  gulp build
 
 EXPOSE 3000
 
