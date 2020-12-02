@@ -42,14 +42,14 @@ body {
 .header {
   width: 100%;
   border-bottom: 1px solid #E0752F;
-  position: absolute;
+  position: fixed;
   top: 0;
-  z-index: 100;
+  z-index: 2000;
 }
 
 .header-container {
   width: 100%;
-  padding: 2.41vw 13vh;
+  padding: 2vw 13vh;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
