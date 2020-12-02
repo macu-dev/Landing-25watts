@@ -13,9 +13,8 @@ ADD . /app
 
 WORKDIR /app
 RUN echo "Setup Configs..." \
-  pwd;  ls; \
-  npm install; npm list; \
-  npm install -g gulp; npm link gulp; npm list; \
+  npm install;\ 
+  # npm link gulp; \
   gulp build
 
 EXPOSE 3000
