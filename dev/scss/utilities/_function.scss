@@ -1,0 +1,3 @@
+@function calcResponsiveSize($size, $viewport){
+  @return round((100/$viewport)*$size);
+}
