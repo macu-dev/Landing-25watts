@@ -7,14 +7,12 @@ RUN set -x \
   && apt-get clean && rm -rf /tmp/*
 
 COPY supervisor.conf /etc/supervisor/conf.d/supervisor.conf
-#ADD Docker/default /etc/nginx/sites-enabled/
-ADD . /app
 
+ADD . /app
 
 WORKDIR /app
 RUN echo "Setup Configs..." \
-  npm install;\ 
-  # npm link gulp; \
+  npm install; npm link gulp; \
   gulp build
 
 EXPOSE 3000
