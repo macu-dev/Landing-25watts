@@ -11,7 +11,7 @@ COPY supervisor.conf /etc/supervisor/conf.d/supervisor.conf
 ADD . /app
 
 RUN echo "Setup Configs..." \
-  && (cd /app && npm install && gulp build)
+  && (cd /app && npm install && npm install -g gulp && gulp build)
 
 EXPOSE 3000
 
