@@ -50,7 +50,7 @@ function upserver(cb) {
 
 exports.build = series(cleanCss, compiler_SCSS);
 
-exports.default = series(upserver, copyImg, watch_scss);
+exports.default = series(upserver, watch_scss);
  
 
 

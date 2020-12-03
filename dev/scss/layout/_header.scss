@@ -9,14 +9,14 @@
 
 .header-container{
   width: $size-100;
-  padding: 2vw 13vh;
+  padding: 33px 100px;
   @include flexbox();
   flex-wrap: nowrap;
 }
 
 .header__navigation{
   @include flexbox();
-  width: $size-100 - 10%;
+  flex-grow: 1;
   justify-content:flex-end;
 }
 
