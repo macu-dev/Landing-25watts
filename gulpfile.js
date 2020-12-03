@@ -32,12 +32,7 @@ function compiler_SCSS(cb){
   .pipe(refresh(lrserver));
   cb()
 }
-function copyImg(cb){
-  return src ('dev/assets/images/**/*')
-  .pipe(dest('dist/imagenes'))
-  .pipe(refresh(lrserver));
-  cb()
-}
+
 function watch_scss(cb){
   watch(SCSS_SRC, series(cleanCss, compiler_SCSS));
   cb()
