@@ -96,7 +96,7 @@
 /* segunda section */
 .main__section-secondary {
   width: 100%;
-  height: 672px;
+  min-height: 672px;
   @include flexbox();
   padding: 0 299px;
   position: relative;
