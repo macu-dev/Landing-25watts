@@ -241,6 +241,7 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
+  max-height: 768px;
   z-index: 0;
 }
 
@@ -248,8 +249,8 @@ body {
   position: relative;
   width: 70vw;
   height: 40vw;
-  max-width: 126vh;
-  max-height: 72vh;
+  max-width: 966px;
+  max-height: 552px;
 }
 
 .article-products__container-img {
@@ -267,6 +268,8 @@ body {
   bottom: 0;
   right: 0;
   width: 34vw;
+  max-width: 471px;
+  max-height: 304px;
   height: 22vw;
   z-index: 100;
 }
@@ -276,7 +279,9 @@ body {
   display: block;
   position: absolute;
   width: 30vw;
+  max-width: 398px;
   height: 100vh;
+  max-height: 768px;
   background-color: #DCE1DA;
   right: 0;
   z-index: 5;
@@ -284,7 +289,9 @@ body {
 
 .container-img__item {
   width: 100%;
+  max-width: 966px;
   height: 100%;
+  max-height: 552px;
 }
 
 .article-products__container {
