@@ -242,13 +242,14 @@ body {
   justify-content: center;
   height: 100vh;
   max-height: 768px;
+  min-height: 600px;
   z-index: 0;
 }
 
 .article-products {
   position: relative;
   width: 70vw;
-  height: 40vw;
+  height: 70%;
   max-width: 966px;
   max-height: 552px;
 }
@@ -275,7 +276,7 @@ body {
   z-index: 100;
 }
 
-.main__section-tertiary:after, .main__section-quaternary:after {
+.main__section-tertiary:after {
   content: '';
   display: block;
   position: absolute;
@@ -283,6 +284,7 @@ body {
   max-width: 398px;
   height: 100vh;
   max-height: 768px;
+  min-height: 600px;
   background-color: #DCE1DA;
   right: 0;
   z-index: 5;
@@ -338,12 +340,7 @@ body {
   margin-right: 0;
 }
 
-.main__section-quaternary:after {
-  z-index: -1;
-}
-
 .main__section-quaternary {
-  height: 100vh;
   max-height: 768px;
   width: 100%;
   display: flex;
