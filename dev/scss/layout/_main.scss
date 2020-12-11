@@ -176,7 +176,7 @@
   width: 34vw;
   max-width: 471px;
   max-height: 304px;
-  height: 22vw;
+  height: 33vw;
   z-index: 100;
 }
 
@@ -245,19 +245,29 @@
 
 .main__section-quaternary{
   max-height: 768px;
-  width: 100%;
+  width: $size-100;
   @include flexbox();
   flex-wrap: nowrap;
-}
-
-.accordion, .services__img {
-  flex-grow: 1;
+  position: relative;
+  height: 100vh;
 }
 
 .services__img {
+  @include flexbox();
+  justify-content: flex-end;
+}
+
+
+.services__img {
   order: 2;
+  position: absolute;
+  width: $size-50;
+  right: 0;
   height: $size-100;
 }
 .services__img img {
   height: $size-100;
+  max-width: $size-100;
+  width: $size-100;
+  object-fit: cover;
 }

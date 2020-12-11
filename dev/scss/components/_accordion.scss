@@ -1,0 +1,46 @@
+.card-header{
+  @include flexbox();
+  justify-content:space-between;
+}
+
+.card {
+  border: 1px solid $border-article;
+  border-radius: 4px 4px 0px 0px;
+}
+
+.card-body {
+  padding: 40px 37px;
+  background-color: $color-white;
+}
+
+.card-header{
+  background-color: $bg-article;
+  padding: 17px;
+}
+
+.card-header__title {
+  font-weight: $font-weight-medium;
+  color: $color-5f6368;
+  font-size: $font-size-16;
+}
+
+.card-content {
+  overflow: hidden;
+  max-height: 0;
+  transition: all .5s ease-out;
+}
+
+.accordion {
+  width: 45%;
+  left: 260px;
+  position: relative;
+}
+
+.card-header__button {
+  @include btn(transparent, none , 0 , 1px );
+
+  &:focus{
+    outline: none;
+  }
+}
+

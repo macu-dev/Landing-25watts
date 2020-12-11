@@ -272,7 +272,7 @@ body {
   width: 34vw;
   max-width: 471px;
   max-height: 304px;
-  height: 22vw;
+  height: 33vw;
   z-index: 100;
 }
 
@@ -347,17 +347,80 @@ body {
   flex-wrap: wrap;
   align-items: center;
   flex-wrap: nowrap;
+  position: relative;
+  height: 100vh;
 }
 
-.accordion, .services__img {
-  flex-grow: 1;
+.services__img {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .services__img {
   order: 2;
+  position: absolute;
+  width: 50%;
+  right: 0;
   height: 100%;
 }
 
 .services__img img {
   height: 100%;
+  max-width: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card {
+  border: 1px solid #E3E3E3;
+  border-radius: 4px 4px 0px 0px;
+}
+
+.card-body {
+  padding: 40px 37px;
+  background-color: #FFFFFF;
+}
+
+.card-header {
+  background-color: #F8F8F8;
+  padding: 17px;
+}
+
+.card-header__title {
+  font-weight: 500;
+  color: #5F6368;
+  font-size: 16px;
+}
+
+.card-content {
+  overflow: hidden;
+  max-height: 0;
+  transition: all .5s ease-out;
+}
+
+.accordion {
+  width: 45%;
+  left: 260px;
+  position: relative;
+}
+
+.card-header__button {
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  padding: 1px;
+  cursor: pointer;
+}
+
+.card-header__button:focus {
+  outline: none;
 }
