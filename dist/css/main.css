@@ -191,9 +191,13 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  padding: 0 299px;
   position: relative;
   align-content: center;
+}
+
+.section-secondary__container {
+  width: 60%;
+  margin: 0 auto;
 }
 
 .main__section-secondary:after {
@@ -231,6 +235,9 @@ body {
   line-height: 28px;
   color: #343434;
   letter-spacing: 0.22px;
+  min-width: 80%;
+  max-width: 100%;
+  max-height: 960px;
 }
 
 .main__section-tertiary {
