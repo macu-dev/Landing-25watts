@@ -1,0 +1,46 @@
+.contact_title {
+  @extend .main__section-section__title;
+}
+
+.contact_parraf {
+  @extend .main__section-section__subtitle;
+}
+
+.contact_container {
+  padding-left: 100px;
+}
+
+.input-group, .input-group input, .message {
+  border: none;
+}
+
+::placeholder {
+  @include font($font-family-roboto, 16px, $color-5f6368);
+  font-weight: $medium;
+}
+
+.input-group input, .message  {
+  padding: 20px 0;
+  width: 90%;
+  background: transparent;
+  border-bottom: 2px solid $border-article;
+}
+
+.message {
+  resize:none;
+}
+
+.btn-send {
+  @include configLink();
+  @include btn($color-orange,
+    none,
+    25px,
+    14px 54px);
+  @include font($font-family-roboto,
+    $font-size-16,
+    $color-white);
+  font-weight: $font-weight-medium;
+  display:inline-block;
+  margin-top: 39px;
+
+}

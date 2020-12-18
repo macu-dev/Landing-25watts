@@ -241,7 +241,7 @@ body {
   position: absolute;
 }
 
-.main__section-section__title {
+.main__section-section__title, .contact_title {
   width: 100%;
   line-height: 45px;
   font-family: "Poppins";
@@ -251,7 +251,7 @@ body {
   letter-spacing: 0.55px;
 }
 
-.main__section-section__subtitle {
+.main__section-section__subtitle, .contact_parraf {
   margin-bottom: 44px;
   font-family: "Poppins";
   font-size: 39px;
@@ -471,8 +471,8 @@ body {
 }
 
 .accordion {
-  width: 45%;
-  left: 260px;
+  width: 50%;
+  left: 101px;
   position: relative;
 }
 
@@ -486,4 +486,45 @@ body {
 
 .card-header__button:focus {
   outline: none;
+}
+
+.contact_container {
+  padding-left: 100px;
+}
+
+.input-group, .input-group input, .message {
+  border: none;
+}
+
+::placeholder {
+  font-family: "Roboto";
+  font-size: 16px;
+  color: #5F6368;
+  font-weight: 768px;
+}
+
+.input-group input, .message {
+  padding: 20px 0;
+  width: 90%;
+  background: transparent;
+  border-bottom: 2px solid #E3E3E3;
+}
+
+.message {
+  resize: none;
+}
+
+.btn-send {
+  text-decoration: none;
+  background-color: #E0752F;
+  border: none;
+  border-radius: 25px;
+  padding: 14px 54px;
+  cursor: pointer;
+  font-family: "Roboto";
+  font-size: 16px;
+  color: #FFFFFF;
+  font-weight: 500;
+  display: inline-block;
+  margin-top: 39px;
 }
