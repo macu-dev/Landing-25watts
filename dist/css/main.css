@@ -432,7 +432,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
   z-index: 10;
 }
 
@@ -500,7 +499,7 @@ body {
   font-family: "Roboto";
   font-size: 16px;
   color: #5F6368;
-  font-weight: 768px;
+  font-weight: 500;
 }
 
 .input-group input, .message {
@@ -527,4 +526,24 @@ body {
   font-weight: 500;
   display: inline-block;
   margin-top: 39px;
+}
+
+.footer {
+  background-color: #343434;
+}
+
+.footer_container {
+  width: 100%;
+  padding: 29px 100px 29px 100px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer_parraf {
+  font-family: "Roboto";
+  font-size: 16px;
+  color: #DCE1DA;
+  font-weight: 400;
 }

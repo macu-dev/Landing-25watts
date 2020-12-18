@@ -1,0 +1,15 @@
+.footer {
+  background-color: $color-text;
+}
+
+.footer_container {
+  width: $size-100;
+  padding: 29px 100px 29px 100px;
+  @include flexbox();
+  justify-content: space-between;
+}
+
+.footer_parraf {
+  @include font($font-family-roboto, 16px,$color-grayLight );
+  font-weight: $font-weight-regular;
+}

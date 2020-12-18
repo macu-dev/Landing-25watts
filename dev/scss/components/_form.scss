@@ -16,7 +16,7 @@
 
 ::placeholder {
   @include font($font-family-roboto, 16px, $color-5f6368);
-  font-weight: $medium;
+  font-weight: $font-weight-medium;
 }
 
 .input-group input, .message  {
