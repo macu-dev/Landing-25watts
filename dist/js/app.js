@@ -1,3 +1,4 @@
+
 const header = document.querySelector('.header');
 const  accordion = document.querySelector('#accordion');
 
@@ -12,6 +13,26 @@ function changeColorNav () {
   }else{
     header.style.backgroundColor = 'transparent';
     header.style.borderBottom = '1px solid #E0752F';
+  }
+}
+
+//slider
+const nav = document.querySelector('.slider-menu');
+const sliders = document.querySelectorAll('.slider-items');
+
+nav.addEventListener('click', showSlider);
+
+let idSlider = 0;
+function showSlider(e) {
+
+  if(e.target.classList.contains('slider-menu__item')) {
+    e.target.parentElement.children[idSlider].classList.remove('slider-menu__item-active');
+    e.target.classList.add('slider-menu__item-active');
+  
+    sliders[idSlider].style.display = 'none'
+    sliders[e.target.dataset.slider].style.display = 'flex'
+
+    idSlider = e.target.dataset.slider;
   }
 }
 
