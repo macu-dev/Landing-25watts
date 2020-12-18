@@ -224,8 +224,6 @@
   background-color: $color-grayLight;
   right: 0;
   z-index: 5;
-
-
 }
 
 .container-img__item {
@@ -278,6 +276,7 @@
 
 .main__section-quaternary{
   max-height: 768px;
+  min-height: 600px;
   width: $size-100;
   @include flexbox();
   flex-wrap: nowrap;
@@ -303,4 +302,28 @@
   max-width: $size-100;
   width: $size-100;
   object-fit: cover;
+}
+
+.contact {
+  height: 100vh;
+  max-height: 768px;
+  min-height: 600px;
+  width: $size-100;
+  background-color: $color-bg-section;
+  position: relative;
+  @include flexbox();
+}
+
+.contact:after {
+  @extend .main__section-tertiary:after;
+}
+
+.contact_container, .contact_img {
+  flex: 1 1 50%;
+}
+
+.contact_img {
+  @include flexbox();
+  justify-content:center;
+  z-index: 10;
 }

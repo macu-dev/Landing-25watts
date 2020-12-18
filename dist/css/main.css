@@ -313,7 +313,7 @@ body {
   z-index: 100;
 }
 
-.main__section-tertiary:after {
+.main__section-tertiary:after, .contact:after {
   content: '';
   display: block;
   position: absolute;
@@ -380,6 +380,7 @@ body {
 
 .main__section-quaternary {
   max-height: 768px;
+  min-height: 600px;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -409,6 +410,30 @@ body {
   max-width: 100%;
   width: 100%;
   object-fit: cover;
+}
+
+.contact {
+  height: 100vh;
+  max-height: 768px;
+  min-height: 600px;
+  width: 100%;
+  background-color: #F2F4F1;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.contact_container, .contact_img {
+  flex: 1 1 50%;
+}
+
+.contact_img {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
 }
 
 .card-header {
