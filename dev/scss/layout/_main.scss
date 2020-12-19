@@ -13,7 +13,7 @@
   padding: 0 100px;
   height: 100%;
   @include flexbox();
-  @include bg(url("dist/images/slider.png"),
+  @include bg(url("../images/slider.png"),
     cover,
     100% 100%);
   position: relative;
@@ -44,7 +44,6 @@
   @include flexbox();
   align-content: center;
   
-
   h1 {
     @include font($font-family-poppins,
       $font-size-48,

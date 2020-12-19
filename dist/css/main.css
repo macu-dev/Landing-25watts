@@ -103,7 +103,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  background-image: url("/dist/images/slider.png");
+  background-image: url("../images/slider.png");
   background-size: cover;
   background-position: 100% 100%;
   background-repeat: no-repeat;
