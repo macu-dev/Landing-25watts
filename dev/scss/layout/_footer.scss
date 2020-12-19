@@ -4,7 +4,7 @@
 
 .footer_container {
   width: $size-100;
-  padding: 29px 100px 29px 100px;
+  padding: 29px 100px;
   @include flexbox();
   justify-content: space-between;
 }

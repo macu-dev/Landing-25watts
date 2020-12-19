@@ -540,7 +540,7 @@ body {
 
 .footer_container {
   width: 100%;
-  padding: 29px 100px 29px 100px;
+  padding: 29px 100px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
