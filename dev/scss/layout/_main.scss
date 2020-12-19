@@ -13,7 +13,7 @@
   padding: 0 100px;
   height: 100%;
   @include flexbox();
-  @include bg(url("/dist/images/slider.png"),
+  @include bg(url("dist/images/slider.png"),
     cover,
     100% 100%);
   position: relative;
@@ -324,5 +324,11 @@
 
 .contact_img {
   @include flexbox();
+  justify-content: center;
   z-index: 10;
+}
+
+.contact_img img {
+  max-width: 100%;
+  width: 80%;
 }

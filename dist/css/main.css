@@ -432,7 +432,13 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
   z-index: 10;
+}
+
+.contact_img img {
+  max-width: 100%;
+  width: 80%;
 }
 
 .card-header {
